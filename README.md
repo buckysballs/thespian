@@ -1,0 +1,3 @@
+# thespian
+
+Methods for actors
