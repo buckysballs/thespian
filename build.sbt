@@ -16,15 +16,9 @@ resolvers += "spray nightlies" at "http://nightlies.spray.io"
 
 lazy val lib = Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaVersion
-    exclude ("org.scala-lang" , "scala-library"),
-//  "com.typesafe.akka" %% "akka-slf4j" % akkaVersion
-//    exclude ("org.slf4j", "slf4j-api")
-//    exclude ("org.scala-lang" , "scala-library"),
-//  "ch.qos.logback" % "logback-classic" % "1.0.13",
-//  "io.spray" % "spray-can" % sprayVersion,
-//  "io.spray" % "spray-routing" % sprayVersion,
-//  "io.spray" % "spray-testkit" % sprayVersion % "test",
-  "org.twitter4j" % "twitter4j-stream" % "3.0.3"
+    exclude("org.scala-lang", "scala-library"),
+  "org.twitter4j" % "twitter4j-stream" % "3.0.3",
+  "org.json4s" %% "json4s-native" % "3.3.0"
 )
 
 lazy val testLib = Seq(
